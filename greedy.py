@@ -1,12 +1,18 @@
+id_tugas = [str(input("Masukkan ID tugas 1: ")), str(input("Masukkan ID tugas 2: ")), str(input("Masukkan ID tugas 3: ")), str(input("Masukkan ID tugas 4: ")), str(input("Masukkan ID tugas 5: "))]
+
+deadline_tugas = [int(input("Masukkan deadline tugas 1: ")), int(input("Masukkan deadline tugas 2: ")), int(input("Masukkan deadline tugas 3: ")), int(input("Masukkan deadline tugas 4: ")), int(input("Masukkan deadline tugas 5: "))]
+
+profit_tugas = [int(input("Masukkan profit tugas 1: ")), int(input("Masukkan profit tugas 2: ")), int(input("Masukkan profit tugas 3: ")), int(input("Masukkan profit tugas 4: ")), int(input("Masukkan profit tugas 5: "))]
 
 # Data tugas
 jobs = [
-          {"id": "A", "deadline": 2, "profit": 100},
-          {"id": "B", "deadline": 1, "profit": 19},
-          {"id": "C", "deadline": 2, "profit": 27},
-          {"id": "D", "deadline": 1, "profit": 25},
-          {"id": "E", "deadline": 3, "profit": 15}
+          {"id": id_tugas[0], "deadline": deadline_tugas[0], "profit": profit_tugas[0]},
+          {"id": id_tugas[1], "deadline": deadline_tugas[1], "profit": profit_tugas[1]},
+          {"id": id_tugas[2], "deadline": deadline_tugas[2], "profit": profit_tugas[2]},
+          {"id": id_tugas[3], "deadline": deadline_tugas[3], "profit": profit_tugas[3]},
+          {"id": id_tugas[4], "deadline": deadline_tugas[4], "profit": profit_tugas[4]}
 ]
+print("\n")
 
 # 1. Urutkan berdasarkan profit terbesar
 jobs.sort(key=lambda x: x["profit"], reverse=True)
